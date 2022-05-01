@@ -1,11 +1,15 @@
+/*
+ * Oficia: Tenia un error de compilacion
+ */
 import remiseras.*
 import clientes.*
 
 object oficina {
 	var primeraOpcion 
 	var segundaOpcion 
-	var opcionAcambiar
-	
+	/* este atributo no es necesario
+	 * var opcionAcambiar
+	*/
 	method asignarRemiseras(remisera1, remisera2) {
 		primeraOpcion = remisera1
 		segundaOpcion = remisera2
@@ -17,10 +21,10 @@ object oficina {
 		segundaOpcion = remisera
 	}
 	method intercambiarRemiseras() {
-		
-		opcionACambiar = primeraOpcion
-		self.cambiarPrimeraRemiseraPor(segundaOpcion)
-		self.cambiarSegundaRemiseraPor(opcionACambiar)
+		/*
+		 * aca debias llamar al método self.asignarRemiseras(r2,r1)
+		 */
+		self.asignarRemiseras(segundaOpcion, primeraOpcion)
 	}
 
 	method remiseraElegidaParaViaje(cliente, kms) {
