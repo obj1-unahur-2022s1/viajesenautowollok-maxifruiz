@@ -1,3 +1,6 @@
+/*
+ * Clientes: Bien 
+ */
 import remiseras.*
 
 object ludmila { 
@@ -10,12 +13,14 @@ object ludmila {
 
 object anaMaria { 
 	var estaEstable = true			
-	
+	/* Corrección en la condición
+	 * En una variable booleana esta demas compararla con true o false
+	 */
 	method precioPorKilometro() {
-		if(estaEstable == !estaEstable){
-			return 25
-		}else{
+		if(estaEstable){
 			return 30
+		}else{
+			return 25
 		} 
 	}
 	method estaEstable() {

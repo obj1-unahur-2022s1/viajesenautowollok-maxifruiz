@@ -1,6 +1,11 @@
+/*
+ * Algunos test falla porque no estan iniciliados a quien cubre, primera opcion, etc
+ */
+
 import clientes.*
 import remiseras.*
 import oficinaCooperativa.*
+
 
 //TEST 10 KM
 
